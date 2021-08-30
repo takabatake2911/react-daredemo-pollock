@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Header from './Header';
+import Main from './Main';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const DIV = styled.div`
+    width: 100%;
+    max-width: 1500px;
+    height: 2000px;
+    background-color: #fff;
+    margin: 0 auto;
+`;
+
+const App = () => {
+    return (
+        <DIV>
+            <Header />
+            <Main />
+        </DIV>
+    );
+};
 
 export default App;
